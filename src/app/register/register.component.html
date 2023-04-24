@@ -1,0 +1,51 @@
+<body>
+<div class=leftside>
+    <p>WELCOME</p>
+
+   <p class="para"> You are 30 seconds awy<br>from earning your own<br>money</p>
+    
+ 
+<br><br>
+    <button class="btnlogin">Login</button>
+</div>
+
+    <form #registerForm="ngForm">
+        <button class="employeebtn">employee</button>
+        <h2>apply as employee</h2>
+      <div class="mainContainer">
+        <div class="inputsContainer">
+          <div class="firstInputs">
+            <input type="text" id="firstName" name="firstName" [(ngModel)]="Name" required placeholder="First Name*"><br>
+            <input type="text" id="lastName" name="lastName" [(ngModel)]="Surname" required placeholder="Last Name*"><br>
+            <input type="password" id="password" name="password" [(ngModel)]="Password" required placeholder="Password*"><br>
+            <input type="password" id="cornfimPassword" name="cornfimPassword" [(ngModel)]="ConfirmPassword" required placeholder="Confirm Password*">
+            <label>
+                <input type="radio" name="gender" value="male" checked>Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female">Female
+              </label>
+          </div>
+
+          <div class="secInputs"><br><br>
+            <input type="text" id="email" name="email" [(ngModel)]="Email" required placeholder="Your Email*"><br>
+            <input type="text" id="yourPhone" name="yourPhone" [(ngModel)]="Phone" required placeholder="your Phone*"><br>
+            <select name="question" [(ngModel)]="Question" required placeholder="Please select your security question"><br>
+              <option selected place>What is your nickname?</option><br>
+              <option selected>What is your nickname?</option>
+              <option *ngFor="let question of Question">{{ question }}</option><br>
+            </select><br>
+            <input type="text" id="yourAnswer" name="yourAnswer" [(ngModel)]="Answer" required placeholder="Enter Your Answer"><br><br>
+            <button type="submit" (click)="register()" class="btnreg">Register</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </body>
+
+  
+  
+  
+  
+  

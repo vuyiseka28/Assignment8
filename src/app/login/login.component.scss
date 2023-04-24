@@ -1,0 +1,62 @@
+body{
+    background-color: #279F7B;
+    height: 100vh;
+}
+.loginform{
+    background-color: white;
+    border-radius: 30px;
+    width: 700px;
+    height: 400px;
+    margin-left: 600px;  
+    margin-bottom: 300px;
+    
+}
+input{
+    margin-top: 30px;
+    height: 35px;
+    width:300px;
+    margin-left: 170px;
+    border-radius: 15px;
+
+}
+
+button{
+    border-radius: 15px; 
+    height: 35px;
+    width:300px; 
+}
+
+.loginbtn{
+    height: 35px;
+    width:300px;
+    margin-left: 170px;
+    border-radius: 15px;
+    
+}
+
+p{
+    margin-left: 300px;
+    padding-top: 30px;
+    font-size: 2em;
+}
+button{
+    height: 35px;
+    width:300px;
+    background-color: aquamarine;
+}
+
+.checkbox{
+    display: flex;
+    padding-right: 40px;
+    justify-content: center;
+}
+
+.box{
+    height: 15px;
+    margin-left: -1px;
+}
+
+image{
+   margin-right: 5px;
+}
+

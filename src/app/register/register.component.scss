@@ -1,0 +1,130 @@
+body{
+    height: 90vh;
+    background: linear-gradient(to left, #11e6e9, darkblue);
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  .inputsContainer {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+  }
+  .firstInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .secInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 320px;
+    height: 30px;
+  }
+
+  P{
+    color: white;
+    font-size: 2em;
+  }
+  .para{
+    color: white;
+    font-size: medium;
+  }
+
+
+  .leftside {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    padding-top: 250px;
+  }
+
+  /* style for form */
+  form {
+    float: right;
+    width: 60%;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 30px;
+  }
+
+  /* clear float after both elements */
+  .clear {
+    clear: both;
+  }
+
+  .btnlogin{
+    width: 85px;
+    height:25px;
+    border-radius: 20px;
+  }
+
+  .btnreg{
+    width: 85px;
+    height:25px;
+    background-color: rgba(42, 88, 238, 0.821);
+    color: white;
+    border-radius: 20px;
+
+  }
+
+  h2{
+    display: flex;
+    justify-content: center;
+    color: gray;
+
+  }
+
+  .employeebtn {
+    margin-left: 680px;
+    
+  }
+
+  label{
+    display: inline-block;
+    gap: 10px;
+  }
+
+  .button-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bottom-button {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .top-button {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(42, 88, 238, 0.821);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+
+  }
+
+
