@@ -10,30 +10,28 @@ export class LoginComponent implements OnInit{
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-  constructor(private router :Router){}
- username :string = '';
+  constructor(public router :Router){}
+  username :string = '';
   password:string = '';
 
-  getData() :void {
-   /* let obj={
-      name:this.username,
-      pass:this.password
-    }*/
+  login() :void {
+   
 
     const existingUser = JSON.parse(localStorage.getItem('users') as string) || [];
 
-      const userExists = existingUser.some((user: { username: string; }) => user.username === this.username);
+      const userExists = existingUser.find((user:any ) => user.username === this.username);
       if (userExists) {
-        this.router.navigate(['home'])
+      
       alert('You logged in.');
+      this.router.navigate(['home'])
       return;
      }else
      {
       alert('User does not exist');
       this.router.navigate(['register'])
      }
-    //const newUser = { username: this.username, password: this.password };
-   // existingUser.push(newUser);
+      //const newUser = { username: this.username, password: this.password };
+     // existingUser.push(newUser);
     //localStorage.setItem('users', JSON.stringify(existingUser));
 
   }

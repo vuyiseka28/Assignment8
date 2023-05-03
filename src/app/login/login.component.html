@@ -1,28 +1,40 @@
+
 <body>
-
-<img src="../../assets/download.png">
-
-<!--<h1>Create<br>Custom<br>Login</h1-->
-
-<div class="loginform">
-  
-    
-      <p>Log in</p>
-           
-       <input type="text" id="username" name="username" [(ngModel)]="username" required placeholder="Username/Email Address"><br><br>
+   <div class="mainContainer ">
+     <div class="sideBar">
+       <div class="topHeader">
+         <img src="../../assets/Screenshot 2023-04-25 143901.png" alt="icon" width="10%" height="10%">
+         <h2>EXCLUSIVE ADDONS</h2><br>
+         <p style="letter-spacing: 5px;" id="subMainHeader">FOR ELEMENTOR</p>
+       </div>
+       <div class="bottomHeader">
+         <h1>Create<br> Custom <br>Login Form</h1>
+       </div>
+       <h4>exclusiveaddons.com</h4>
+     </div>
+     <div class="rightBar">
+       <div class="logIn_form">
  
-       <input type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Password"><br><br>
-
-    <div class="loginbtn">
-       <button type="submit"(click)="getData()">login</button>
-    </div>
-
-    <div class="checkbox">
-       <input type="checkbox" class="box"><br><br>Remember Me Your password?
-         
-    
-    </div>
-    </div>
-
+         <h2 style="color: black;"><b>Log in</b></h2>
  
- </body> 
+         <input type="text" placeholder="User Name/Email Address" [(ngModel)]="username"><br>
+         <input type="password" placeholder="Password" [(ngModel)]="password"><br>
+         <button title="Login" (click)="login()">Log in</button>
+         <div class="remberMeWrapper">
+ 
+           <div class="chk">
+             <input title="ck" type="checkbox" id="checkbox" style="border-color: #279F7B;">
+             <p style="color: black;">Remember Me</p>
+           </div>
+           <p style="color: #279F7B;" id="frgtP">Forgot Your password?</p>
+ 
+         </div>
+         <hr>
+         <button type="submit" id="createAcc" style="color:#BFC2CB; border-color: #279F7B;" >Create an account</button>
+       </div>
+ 
+     </div>
+   </div>
+ 
+ </body>
+ 

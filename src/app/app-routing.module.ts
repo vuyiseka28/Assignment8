@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 
+// import { HomeComponent } from './home/home.component';
+
 const routes: Routes = [
 {
   path:"", redirectTo: "loginform", pathMatch:"full"
@@ -11,18 +13,16 @@ const routes: Routes = [
 {
   path:"loginform", component: LoginComponent
 },
-{ 
-  path:"",redirectTo: "register", pathMatch:"full"
-},
+
 {
   path:"register", component: RegisterComponent
 },
-{
-  path:"" , redirectTo: "home" , pathMatch: "full"
-},
+
 {
   path:"home", component: HomeComponent
-},
+}
+
+
 
 ];
 

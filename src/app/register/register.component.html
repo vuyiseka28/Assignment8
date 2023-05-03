@@ -6,11 +6,11 @@
     
  
 <br><br>
-    <button class="btnlogin">Login</button>
+    <button class="btnlogin"(click)="takeMeTologin()">Login</button>
 </div>
 
     <form #registerForm="ngForm">
-        <button class="employeebtn">employee</button>
+       <div class="rightbtn"> <h5>employee</h5><h6>hire</h6></div>
         <h2>apply as employee</h2>
       <div class="mainContainer">
         <div class="inputsContainer">
@@ -19,12 +19,15 @@
             <input type="text" id="lastName" name="lastName" [(ngModel)]="Surname" required placeholder="Last Name*"><br>
             <input type="password" id="password" name="password" [(ngModel)]="Password" required placeholder="Password*"><br>
             <input type="password" id="cornfimPassword" name="cornfimPassword" [(ngModel)]="ConfirmPassword" required placeholder="Confirm Password*">
+            
+            <div class="gender">
             <label>
                 <input type="radio" name="gender" value="male" checked>Male
               </label>
               <label>
                 <input type="radio" name="gender" value="female">Female
               </label>
+            </div>
           </div>
 
           <div class="secInputs"><br><br>

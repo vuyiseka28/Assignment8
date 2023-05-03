@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register',
@@ -16,8 +18,9 @@ export class RegisterComponent implements OnInit {
   Question: string = '';
   Answer: string = '';
   registerUser: any = [];
+ 
 
-  constructor() {}
+  constructor(private router:Router) {}
 
   ngOnInit(): void {
     const questions = ['What is your nickname?', 'When is your birthday?'];
@@ -49,7 +52,13 @@ export class RegisterComponent implements OnInit {
       registeredUsers.push(user);
       localStorage.setItem('register', JSON.stringify(registeredUsers));
       alert('User Registered Successfully');
+      this.router.navigate(['loginform'])
     }
+    
+  }
+  
+  takeMeTologin(){
+    this.router.navigate(['loginform'])
   }
 }
   
